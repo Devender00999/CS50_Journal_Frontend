@@ -28,6 +28,7 @@ const Info = () => {
           <span className="feature">Strengthen memory</span>
         </div>
         <a
+          target={"_blank"}
           style={{ fontSize: "12px", textDecoration: "none" }}
           href="https://wa-health.kaiserpermanente.org/seven-journal-writing-benefits/"
         >

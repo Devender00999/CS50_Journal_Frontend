@@ -11,14 +11,10 @@ const getJournalById = async (id) => {
   return journal;
 };
 const addJournal = async (journal, id) => {
-  console.log(journal, id);
-
   if (id) {
-    const { data } = await http.put(apiEndPoint + "/" + id, journal);
-    console.log(data, "put re");
+    await http.put(apiEndPoint + "/" + id, journal);
   } else {
-    const { data } = await http.post(apiEndPoint, journal);
-    console.log(data);
+    await http.post(apiEndPoint, journal);
   }
 };
 

@@ -30,7 +30,7 @@ const Journals = () => {
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
       } else {
-        setIsLoading(true);
+        setIsLoading(false);
         console.log(ex.response.data);
       }
     }

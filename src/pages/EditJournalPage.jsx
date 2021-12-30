@@ -12,7 +12,6 @@ const EditJournalPage = () => {
         id = id[id.length - 1];
         setJournalId(id);
         let journalData = await journalService.getJournalById(id);
-        console.log(journalData);
 
         if (!journalData) window.location.href = "/";
 
@@ -53,8 +52,7 @@ const EditJournalPage = () => {
     } else {
       setErr(null);
       try {
-        await journalService.addJournal(journal, journalId);
-
+        journalService.addJournal(journal, journalId);
         window.location.href = "/";
       } catch (ex) {
         if (ex.response && ex.response.status === 400) {
@@ -68,7 +66,6 @@ const EditJournalPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     checkError();
-    console.log(journal);
   };
   function validateJournal(journal) {
     const schema = Joi.object({

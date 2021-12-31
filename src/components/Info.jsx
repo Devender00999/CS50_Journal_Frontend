@@ -29,6 +29,7 @@ const Info = () => {
         </div>
         <a
           target={"_blank"}
+          rel="noreferrer"
           style={{ fontSize: "12px", textDecoration: "none" }}
           href="https://wa-health.kaiserpermanente.org/seven-journal-writing-benefits/"
         >

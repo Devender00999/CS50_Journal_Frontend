@@ -22,7 +22,7 @@ const NavBar = (props) => {
           className="navbar-brand"
           to="/"
         >
-          CS50 Journal
+          My Journal
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
